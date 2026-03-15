@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Light on or off</title>
+    <style>
+     body{
+            background-color: rgb(213, 157, 138);
+        }
+        #box{
+            padding:25px;
+            border: 3px solid brown; 
+            background-color:white;
+            text-align: center;
+            width: 300px;height:150px;
+            border-radius: 25px;
+            margin: 100px auto;
+        }
+        button{
+            padding:10px 25px;
+            border-radius: 5px;
+            background-color: aqua;
+            margin-right: 20px;
+            margin-top: 30px;
+        }
+      </style>
+
+</head>
+
+<body>
+
+<div id="box">
+<p id="light">Light is OFF</p>
+<button id="btn" onclick="lightOn()">ON</button>
+<button id="btn2" onclick="lightOff()">OFF</button>
+</div>
+
+<script>
+
+function lightOn() {
+  document.getElementById("light").innerHTML = "Light is ON";
+  box.style.backgroundColor="yellow";
+    box.style.border="3px solid darkorange";
+     light.style.color="black";
+       btn.style.backgroundColor="green";
+          btn2.style.backgroundColor=" aqua";
+
+}
+function lightOff() {
+  document.getElementById("light").innerHTML = "Light is OFF";
+   box.style.backgroundColor="black";
+   light.style.color="white";
+   box.style.border="3px solid white";
+     btn2.style.backgroundColor="green";
+     btn.style.backgroundColor=" aqua";
+}
+
+</script>
+</body>
+</html>
